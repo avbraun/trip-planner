@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  background-color: #C1B5AD;
+}
+
+#map {
+  height: 90vh;
+  width: 100vw;
+  z-index: -1;
+  /* opacity: 0; */
+}
+
+footer {
+  /* display: flex; */
+  background-color: lightblue;
+  z-index: 10;
+  position: fixed;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100vw;
+  opacity: .75;
+  height: 40px;
+}
+
+footer a {
+  /* display: flex; */
+  float: left;
+  font-size: 16px;
+  color: black;
+  /* text-align: center; */
+  /* justify-content: flex-start; */
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 20px;
+}
+
+footer a:hover {
+  opacity: 1;
+}
+
+
+#itinerary-section {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  width: 40vw;
+  height: 450px;
+  position: absolute;
+  top: 25vh;
+  left: 40vw;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  padding-top: 25px;
+  opacity: .75;
+  /* text-align: center; */
+  /* border-radius: 50%; */
+  /* display: inline; */
+}
+
+#itinerary-section h2 {
+  font-family: 'Homemade Apple', cursive;
+}
+
+#itinerary-section li {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* Navbar container */
+nav {
+  overflow: hidden;
+  background-color: peachpuff;
+  /* height: 30px; */
+  /* opacity: 1; */
+  /* font-family: Arial; */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 20px;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(126, 192, 223);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 25px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
